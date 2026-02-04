@@ -1,4 +1,4 @@
-![FabricOps Logo](FabricOps.png)
+![FabricOps Logo](FabricOps_250.png)
 
 # FabricOps – Microsoft Fabric DevOps Automation Platform
 
