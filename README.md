@@ -89,20 +89,22 @@ To use FabricOps in your environment, you'll need:
 ## Project Structure
 
 ```
-├── automation/                    # Automation scripts and configuration
-│   ├── credentials/               # Credential templates and configuration
-│   ├── resources/                # Environment definitions and parameters
-│   │   ├── BPARules.json         # Custom Best Practice Analyzer rules
-│   │   ├── environments/         # Environment-specific configurations
-│   │   └── parameters/           # Deployment parameters and bindings
-│   └── scripts/                  # Core automation scripts
-│       ├── fabric_setup.py      # Infrastructure setup/teardown
-│       ├── fabric_release.py    # Solution deployment
-│       ├── fabric_feature_*     # Feature management automation
-│       ├── locale/              # Local development utilities
-│       └── modules/             # Reusable automation modules
-└── solution/                     # Fabric workspace items
-    ├── core/                     # Core infrastructure components
+├── .azure-pipelines/             # Azure DevOps pipeline definitions
+├── .github/                      # GitHub Actions workflows and templates
+├── automation/                   # Automation scripts and configuration
+│   ├── credentials/              # Credential templates and configuration
+│   ├── resources/               # Environment definitions and parameters
+│   │   ├── BPARules.json        # Custom Best Practice Analyzer rules
+│   │   ├── environments/        # Environment-specific configurations
+│   │   └── parameters/          # Deployment parameters and bindings
+│   └── scripts/                 # Core automation scripts
+│       ├── fabric_setup.py     # Infrastructure setup/teardown
+│       ├── fabric_release.py   # Solution deployment
+│       ├── fabric_feature_*    # Feature management automation
+│       ├── locale/             # Local development utilities
+│       └── modules/            # Reusable automation modules
+└── solution/                    # Fabric workspace items
+    ├── core/                    # Core infrastructure components
     ├── ingest/                   # Data ingestion pipelines
     ├── store/                    # Data storage (lakehouses)
     ├── prepare/                  # Data preparation and transformation
